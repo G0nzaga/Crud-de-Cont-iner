@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crud de Contêiner</title>
+  <link rel="stylesheet" href="cc.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <span>Crud de Contêiner</span>
+      <button onclick="openModal()" id="new">Incluir</i></button>
+    </div>
+
+    <div class="divTable">
+      <table>
+        <thead>
+          <tr>
+            <th>Cliente</th>
+            <th>Número do contêiner</th>
+            <th>Tipo</th>
+            <th>Status</th>
+            <th>Categoria</th>
+            <th class="acao">Editar</th>
+            <th class="acao">Excluir</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="modal-container">
+      <div class="modal">
+        <form>
+          <label for="m-cliente">Cliente</label>
+          <input id="m-cliente" type="text" required />
+  
+          <label for="m-numero">Número do Contêiner (4 letras e 7 números. Ex: TEST1234567)</label>
+          <input id="m-numero" type="text" required />
+
+          <label for="m-tipo">Tipo:</label>
+          <select id="m-tipo" type="text">
+            <option id="m-tipo">20</option>
+            <option id="m-tipo">40</option>
+          </select>
+          <br>
+          <br>
+
+
+          <!-- <input id="m-tipo" type="number" required /> -->
+
+          <label for="m-status">Status:</label>
+          <select id="m-status" name="country">
+            <option id="m-status">Cheio</option>
+            <option id="m-status">Vazio</option>
+          </select>
+          <br>
+          <br>
+          <!-- <input id="m-status" type="text" required /> -->
+
+          <label for="m-categoria">Categoria:</label>
+          <select id="m-categoria" name="m-categoria">
+            <option id="m-categoria">Importação</option>
+            <option id="m-categoria">Exportação</option>
+          </select>
+          <br>
+          <br>
+          <!-- <input id="m-categoria" type="text" required /> -->
+
+          <button id="btnSalvar">Salvar</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+  <script src="cc.js"></script>
+</body>
+
+</html>
